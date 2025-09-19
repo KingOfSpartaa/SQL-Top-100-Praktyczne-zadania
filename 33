@@ -1,0 +1,3 @@
+Wyświetl liczbę wszystkich produktów w bazie danych.
+
+SELECT COUNT(*) FROM `products`;
