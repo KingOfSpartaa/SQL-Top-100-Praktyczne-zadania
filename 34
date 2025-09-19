@@ -1,0 +1,3 @@
+Wyświetl średnią cenę wszystkich produktów.
+
+SELECT AVG(Price) FROM `products`;
