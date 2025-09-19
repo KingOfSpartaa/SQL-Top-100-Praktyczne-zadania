@@ -1,0 +1,3 @@
+Wyświetl łączną wartość cen wszystkich produktów.
+
+SELECT SUM(Price) FROM `products`;
