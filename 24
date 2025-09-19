@@ -1,0 +1,3 @@
+Wyświetl wszystkich klientów, których nazwa firmy nie zawiera litery „e”.
+
+SELECT * FROM customers WHERE CustomerName NOT LIKE "%e%";
