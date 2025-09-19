@@ -1,0 +1,13 @@
+Wyświetl wszystkich klientów z USA, UK i Francji.
+
+--------------------------------------------------------------------
+
+SELECT * FROM customers 
+WHERE 
+Country = "USA" 
+OR Country = "UK" 
+OR Country = "France";
+
+--------------------------------------------------------------------
+
+SELECT * FROM customers WHERE Country IN ('USA', 'UK', 'France');
