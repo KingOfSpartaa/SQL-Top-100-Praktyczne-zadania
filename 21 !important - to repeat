@@ -1,0 +1,4 @@
+Wyświetl wszystkich klientów, których nazwa firmy zawiera dokładnie 2 litery „o”.
+
+SELECT * FROM customers 
+WHERE LENGTH(CustomerName) - LENGTH(REPLACE(CustomerName, 'o', '')) = 2; 
