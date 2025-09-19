@@ -1,0 +1,3 @@
+Wyświetl wszystkich klientów posortowanych malejąco według nazwy firmy.
+
+SELECT * FROM customers ORDER BY CustomerName DESC;
