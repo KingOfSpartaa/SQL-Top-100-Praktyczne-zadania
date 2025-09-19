@@ -1,0 +1,3 @@
+Wyświetl tylko nazwy klientów (CustomerName) z tabeli customers.
+
+SELECT CustomerName FROM customers;
