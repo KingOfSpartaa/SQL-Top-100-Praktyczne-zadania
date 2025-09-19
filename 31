@@ -1,0 +1,3 @@
+Wyświetl nazwę i cenę 10 najdroższych produktów.
+
+SELECT ProductName, Price FROM `products` ORDER BY Price DESC LIMIT 10;
