@@ -1,0 +1,3 @@
+Wyświetl wszystkie produkty, których cena nie mieści się w zakresie od 20 do 30.
+
+SELECT * FROM `products` WHERE Price NOT BETWEEN 20 AND 30
