@@ -1,0 +1,3 @@
+Wyświetl klientów, których nazwa firmy zawiera słowo „Shop”.
+
+SELECT * FROM customers WHERE CustomerName LIKE "%shop%";
