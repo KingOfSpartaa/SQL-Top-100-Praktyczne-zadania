@@ -1,0 +1,3 @@
+Wyświetl wszystkie produkty, których cena zawiera się w przedziale od 20 do 30 włącznie.
+
+SELECT * FROM `products` WHERE Price BETWEEN 20 AND 30;
