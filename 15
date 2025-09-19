@@ -1,0 +1,3 @@
+Wyświetl wszystkich klientów posortowanych alfabetycznie według nazwy firmy.
+
+SELECT * FROM customers ORDER BY CustomerName ASC;
