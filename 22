@@ -1,0 +1,10 @@
+Wyświetl wszystkich klientów, którzy mają w nazwie firmy spację.
+
+SELECT *
+FROM customers
+WHERE CustomerName LIKE '% %';
+
+
+-----------------------------------------------------
+
+SELECT * FROM customers WHERE LENGTH(CustomerName) - LENGTH(REPLACE(CustomerName, ' ', '')) > 0;
