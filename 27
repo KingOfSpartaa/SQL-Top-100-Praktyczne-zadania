@@ -1,0 +1,2 @@
+Wyświetl wszystkie produkty, których cena jest mniejsza niż 10.
+SELECT * FROM `products` WHERE Price <10;
