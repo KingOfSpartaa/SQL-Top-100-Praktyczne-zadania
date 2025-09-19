@@ -1,0 +1,3 @@
+Wyświetl wszystkich klientów, których kraj to USA albo miasto to London.
+
+SELECT * FROM customers WHERE Country = "USA" OR City = "London";
