@@ -1,0 +1,4 @@
+Wyświetl wszystkie produkty, których cena jednostkowa (Price) wynosi dokładnie 0.
+
+SELECT * FROM `products` WHERE Price = 0;
+
