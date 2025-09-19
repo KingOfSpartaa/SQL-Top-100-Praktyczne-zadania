@@ -1,0 +1,3 @@
+Wyświetl liczbę klientów z każdego kraju.
+
+SELECT Country, Count(*) FROM `customers` GROUP BY Country;
