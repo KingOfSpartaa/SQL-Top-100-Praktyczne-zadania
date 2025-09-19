@@ -1,0 +1,3 @@
+Wyświetl nazwę firmy i miasto klientów, ale bez powtarzających się wierszy.
+
+SELECT DISTINCT CustomerName, City FROM customers;
