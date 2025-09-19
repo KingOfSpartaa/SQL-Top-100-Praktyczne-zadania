@@ -1,0 +1,3 @@
+Wyświetl klientów, których nazwa firmy zaczyna się od litery „A”.
+
+SELECT * FROM customers WHERE CustomerName LIKE "A%";
