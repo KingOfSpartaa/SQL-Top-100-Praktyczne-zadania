@@ -1,0 +1,3 @@
+Wyświetl wszystkie unikalne kraje, w których znajdują się klienci.
+
+SELECT DISTINCT Country FROM `customers`;
