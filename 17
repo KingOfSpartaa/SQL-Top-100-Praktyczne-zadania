@@ -1,0 +1,3 @@
+Wyświetl tylko pierwszych 5 klientów z tabeli customers.
+
+SELECT * FROM customers LIMIT 5
