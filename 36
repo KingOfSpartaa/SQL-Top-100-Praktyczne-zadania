@@ -1,0 +1,3 @@
+Wyświetl minimalną i maksymalną cenę produktu.
+SELECT MIN(Price), MAX(Price) FROM `products`;
+
