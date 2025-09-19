@@ -1,0 +1,3 @@
+Wyświetl klientów, którzy NIE mają w nazwie firmy słowa „Shop”.
+
+SELECT * FROM customers WHERE CustomerName NOT LIKE "%shop%";
