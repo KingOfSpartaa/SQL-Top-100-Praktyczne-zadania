@@ -1,0 +1,3 @@
+Wyświetl nazwy produktów i ich ceny, posortowane rosnąco według ceny.
+
+SELECT ProductName, Price FROM `products` ORDER BY Price;
