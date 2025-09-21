@@ -1,0 +1,3 @@
+Wyświetl produkty z przypisaną kategorią, ale tylko te, których cena przekracza 50.
+
+SELECT * FROM products WHERE CategoryID IS NOT NULL AND Price > 50;
