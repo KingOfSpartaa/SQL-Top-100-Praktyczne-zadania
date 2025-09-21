@@ -1,0 +1,4 @@
+Wyświetl produkty, które nie należą do żadnej kategorii (CategoryID ma wartość NULL).
+
+SELECT * FROM products WHERE CategoryID IS NULL;
+
