@@ -1,0 +1,2 @@
+Wyświetl nazwiska i imiona pracowników, posortowane alfabetycznie według nazwiska.
+SELECT FirstName, LastName FROM `employees` ORDER BY LastName;
