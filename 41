@@ -1,0 +1,5 @@
+Wyświetl nazwy produktów oraz nazwy kategorii, do których należą.
+
+SELECT products.ProductName, categories.CategoryName
+FROM products
+JOIN categories ON products.CategoryID = categories.CategoryID;
