@@ -1,0 +1,5 @@
+Wyświetl listę wszystkich zamówień razem z imieniem i nazwiskiem pracownika, który je obsłużył.
+
+SELECT orders.OrderID, employees.FirstName, employees.LastName
+FROM orders
+JOIN employees ON orders.EmployeeID = employees.EmployeeID;
