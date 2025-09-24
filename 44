@@ -1,0 +1,9 @@
+Wyświetl nazwę i cenę produktów z najniższą ceną w każdej kategorii.
+
+SELECT CategoryID, ProductName, Price
+FROM products p
+WHERE Price = (
+SELECT MIN(Price)
+FROM products
+WHERE CategoryID = p.CategoryID
+);
