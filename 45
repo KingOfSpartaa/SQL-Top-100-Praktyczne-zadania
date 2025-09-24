@@ -1,0 +1,6 @@
+Wyświetl średnią cenę produktów w każdej kategorii, posortowaną malejąco.
+
+SELECT CategoryID,  AVG(Price) AS AvgPrice
+FROM products
+GROUP BY CategoryID
+ORDER BY AvgPrice DESC
