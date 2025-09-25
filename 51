@@ -1,0 +1,4 @@
+Wyświetl 5 najdroższych produktów w bazie danych.
+
+SELECT ProductName, Price FROM products 
+ORDER BY Price DESC LIMIT 5
