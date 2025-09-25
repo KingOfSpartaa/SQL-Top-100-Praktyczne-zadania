@@ -1,0 +1,4 @@
+Wyświetl łączną wartość wszystkich zamówień w systemie.
+
+SELECT SUM(products.Price*order_details.Quantity) AS 'ŁĄCZNIE' FROM products
+JOIN order_details ON products.ProductID = order_details.ProductID
