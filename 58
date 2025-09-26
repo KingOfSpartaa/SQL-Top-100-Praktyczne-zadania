@@ -1,0 +1,7 @@
+Wyświetl zamówienia złożone przez klientów z miasta „London” wraz z imieniem i nazwiskiem pracownika, który je obsłużył.
+
+SELECT orders.OrderID, employees.LastName, employees.FirstName, customers.City
+FROM orders 
+JOIN customers ON customers.CustomerID = orders.CustomerID
+JOIN employees ON orders.EmployeeID = employees.EmployeeID
+WHERE customers.City = "London"
