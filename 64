@@ -1,0 +1,6 @@
+Wyświetl pracownika, który obsłużył najwięcej zamówień.
+
+SELECT orders.EmployeeID, employees.LastName, employees.FirstName, COUNT(orders.OrderID) FROM orders
+JOIN employees ON orders.EmployeeID = employees.EmployeeID
+GROUP BY orders.EmployeeID
+ORDER BY COUNT(orders.OrderID) DESC LIMIT 1
