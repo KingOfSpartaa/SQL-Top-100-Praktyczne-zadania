@@ -1,0 +1,6 @@
+Wyświetl klientów, którzy złożyli więcej niż jedno zamówienie tego samego dnia.
+
+SELECT customers.CustomerName, orders.OrderDate, COUNT(orders.OrderID) FROM customers
+JOIN orders ON customers.CustomerID = orders.CustomerID
+GROUP BY customers.CustomerName, orders.OrderDate
+HAVING COUNT(orders.OrderID) > 1;
