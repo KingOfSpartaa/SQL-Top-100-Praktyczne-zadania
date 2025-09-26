@@ -1,0 +1,9 @@
+Wyświetl listę klientów, którzy wydali więcej niż 500 jednostek waluty (suma wszystkich ich zamówień).
+
+SELECT customers.CustomerName, SUM(order_details.Quantity * products.Price) AS 'SUMA_ZAMOWIEN'
+FROM customers
+JOIN orders ON orders.CustomerID = customers.CustomerID
+JOIN order_details ON order_details.OrderID = orders.OrderID
+JOIN products ON products.ProductID = order_details.ProductID
+GROUP BY customers.CustomerName
+HAVING (SUM(order_details.Quantity * products.Price)) > 500
