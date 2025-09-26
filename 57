@@ -1,0 +1,9 @@
+Wyświetl klientów, którzy złożyli zamówienia w co najmniej dwóch różnych miesiącach.
+
+SELECT customers.CustomerName,
+COUNT(DISTINCT DATE_FORMAT(orders.OrderDate, '%Y-%m')) AS MonthsOrdered
+FROM customers
+JOIN orders ON customers.CustomerID = orders.CustomerID
+GROUP BY customers.CustomerID, customers.CustomerName
+HAVING MonthsOrdered >= 2
+ORDER BY MonthsOrdered DESC;
