@@ -1,0 +1,6 @@
+Wyświetl zamówienia, które zawierały więcej niż 3 różne produkty.
+
+SELECT OrderID
+FROM order_details
+GROUP BY OrderID
+HAVING COUNT(DISTINCT ProductID) > 3;
