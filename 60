@@ -1,0 +1,7 @@
+Wyświetl listę pracowników wraz z informacją, ilu klientów obsłużyli oraz jaka była średnia wartość ich zamówień.
+
+SELECT orders.EmployeeID, COUNT(DISTINCT orders.CustomerID) as 'KLINENCI_OBSLUZENIA_PRZEZ_PRZCOWNIKA', ROUND(AVG(order_details.Quantity * products.Price), 2) AS 'SREDNIA_WARTOSC_ZAMOWIEN' 
+FROM orders
+JOIN order_details ON orders.OrderID  = order_details.OrderID
+JOIN products ON order_details.ProductID = products.ProductID
+GROUP BY orders.EmployeeID
