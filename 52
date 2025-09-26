@@ -1,0 +1,5 @@
+Wyświetl nazwę i cenę produktów, których cena przekracza średnią cenę wszystkich produktów.
+
+SELECT ProductName, Price
+FROM products
+WHERE Price > (SELECT AVG(Price) FROM products);
