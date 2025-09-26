@@ -1,0 +1,5 @@
+Dla każdego klienta pokaż datę jego pierwszego zamówienia.
+
+SELECT customers.CustomerName, MIN(orders.OrderDate) FROM customers
+JOIN orders ON orders.CustomerID = customers.CustomerID
+GROUP BY customers.CustomerName
