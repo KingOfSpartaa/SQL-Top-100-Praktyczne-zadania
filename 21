@@ -1,0 +1,6 @@
+Wyświetl wszystkich klientów, których pierwsze zamówienie zostało złożone w roku 2021.
+
+SELECT customers.CustomerName FROM customers
+JOIN orders ON customers.CustomerID = orders.CustomerID 
+GROUP BY customers.CustomerName
+HAVING MIN(orders.OrderDate) BETWEEN '2021-01-01' AND '2021-12-31';
