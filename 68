@@ -1,0 +1,8 @@
+Wyświetl nazwę klienta, który złożył największe zamówienie pod względem wartości.
+
+SELECT customers.CustomerName, SUM(order_details.Quantity * products.Price) AS 'wartosc_zamowienia' FROM customers
+JOIN orders ON customers.CustomerID = orders.CustomerID
+JOIN order_details ON orders.OrderID = order_details.OrderID
+JOIN products on order_details.ProductID = products.ProductID
+GROUP BY customers.CustomerName
+ORDER BY wartosc_zamowienia DESC LIMIT 1
