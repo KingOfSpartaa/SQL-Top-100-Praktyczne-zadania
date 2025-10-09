@@ -1,0 +1,10 @@
+
+
+Dla każdego roku wyświetl liczbę zamówień złożonych w tym roku.
+
+
+SELECT YEAR(OrderDate) AS OrderYear, COUNT(*) AS TotalOrders
+FROM orders
+GROUP BY YEAR(OrderDate)
+ORDER BY OrderYear;
+
