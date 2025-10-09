@@ -1,0 +1,8 @@
+Wyświetl miesiąc, w którym złożono najwięcej zamówień.
+
+
+SELECT MONTH(OrderDate) AS OrderMonth, COUNT(*) AS OrderCount
+FROM orders
+GROUP BY MONTH(OrderDate)
+ORDER BY OrderCount DESC
+LIMIT 1;
