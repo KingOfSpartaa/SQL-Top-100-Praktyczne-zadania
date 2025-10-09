@@ -1,0 +1,7 @@
+Wyświetl produkty, które nigdy nie zostały zamówione.
+
+SELECT ProductName
+FROM products
+WHERE ProductID NOT IN (
+SELECT DISTINCT ProductID FROM order_details
+);
