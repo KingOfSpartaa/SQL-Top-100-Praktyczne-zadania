@@ -1,0 +1,7 @@
+-- Wyświetl nazwę produktu oraz całkowitą ilość sprzedaną w roku 1996. 
+
+SELECT products.ProductName, SUM(order_details.Quantity) FROM order_details 
+JOIN orders ON order_details.OrderID = orders.OrderID
+JOIN products ON order_details.ProductID = products.ProductID
+WHERE YEAR(orders.OrderDate) = 1996 
+GROUP BY products.ProductName;
