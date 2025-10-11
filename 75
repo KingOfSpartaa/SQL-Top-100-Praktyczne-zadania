@@ -1,0 +1,7 @@
+
+
+-- Dla każdego produktu oblicz średnią ilość zamawianą w jednym zamówieniu.
+
+SELECT products.ProductName, ROUND(AVG(order_details.Quantity),0) AS AvgNumberOfProducts FROM products
+JOIN order_details ON products.ProductID = order_details.ProductID
+GROUP BY products.ProductName
